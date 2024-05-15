@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Particle Orb CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- Modified div for displaying the text with fade-in animation -->
+    <div id="welcomeText" class="centered-content">Welcome to the page!</div>
+
+    <div class="wrap" id="wrap"></div>
+
+    <script>
+        const container = document.getElementById('wrap');
+        for (let i = 0; i < 300; i++) {
+            const div = document.createElement('div');
+            div.className = 'c';
+            container.appendChild(div);
+        }
+
+        // Function to fade in text content on page load
+        window.onload = function() {
+            const welcome = document.getElementById('welcomeText');
+            welcome.innerHTML = "Welcome! Let me introduce myself.";
+            welcome.style.opacity = 1; // Trigger fade-in
+        };
+    </script>
 </body>
 </html>
