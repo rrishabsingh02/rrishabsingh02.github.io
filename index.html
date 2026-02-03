@@ -1,84 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Rishab Singh</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="new_personal_website.css">
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://kit.fontawesome.com/6e3114b45b.js"></script>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="image" property="og:image" content="main.png">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="new_personal_website.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e3114b45b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Website</title>
+    <meta name="image" property="og:image" content="main.png">
 </head>
-
 <body data-spy="scroll" data-target="#navbar" data-offset="70px">
-  <!--Navbar from the new HTML-->
-  <nav id="navBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#landing">RS</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#landing">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#intro">Introduction</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#current">Current</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#resume">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!--Navbar-->
+    <nav id="navBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#landing">[Initials]</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#landing">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#current">Current</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!--Existing particle orb CSS-->
-  <div id="welcomeText" class="centered-content">Welcome to the page!</div>
-  <div class="wrap" id="wrap"></div>
+    <!--Existing particle orb CSS-->
+    <div id="welcomeText" class="centered-content">Welcome to the page!</div>
+    <div class="wrap" id="wrap"></div>
   
-  <script>
-    const container = document.getElementById('wrap');
-    for (let i = 0; i < 300; i++) {
-        const div = document.createElement('div');
-        div.className = 'c';
-        container.appendChild(div);
-    }
+    <script>
+        const container = document.getElementById('wrap');
+        for (let i = 0; i < 300; i++) {
+            const div = document.createElement('div');
+            div.className = 'c';
+            container.appendChild(div);
+        }
 
-    // Fade in text content on page load, adapted from your original script
-    window.onload = function() {
-        const welcome = document.getElementById('welcomeText');
-        welcome.innerHTML = "Welcome! Let me introduce myself.";
-        welcome.style.opacity = 1; // Trigger fade-in
-    };
+        // Fade in text content on page load, adapted from your original script
+        window.onload = function() {
+            const welcome = document.getElementById('welcomeText');
+            welcome.innerHTML = "Welcome! Let me introduce myself.";
+            welcome.style.opacity = 1; // Trigger fade-in
+        };
+    </script>
 
+    <div class="whole-page p-0 m-0">
+        <!--intro-->
+    
+        <br>
+        <hr>
+        <br>
+        <!--current-->
+        <div id="current">
+            <div class="container justify-content-center">
+                <div class="row">
+                    <div class="text-center">
+                        <h2>What am I up to?</h2>
+                        <p>I like to learn through new experiences and by surrounding myself with passionate individuals!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-around my-5">
+                    <div class="card col-md-12 mb-3" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img src="[Your Image]" alt="Card image cap" class="card-img-top m-5" style="width: 90%; height: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ml-5">
+                                    <h5 class="card-title">[Your Internship]</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                    <p class="card-text">My [Your Experience] has just begun and it has already been a great learning experience to further my technical and non-technical skills. My role will likely include:
+                                        <ul>
+                                            <li>[Responsibility 1]</li>
+                                            <li>[Responsibility 2]</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-12 mb-3" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="card-body">
+                            <h5 class="card-title">Always Learning</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">What am I learning today?</h6>
+                            <p class="card-text">I consider myself a life-long learner, whether it be through my [Your Learning Method]. What am I currently learning?
+                                <ul>
+                                    <li>[Learning Item 1]</li>
+                                    <li>[Learning Item 2]</li>
+                                    <li>[Learning Item 3]</li>
+                                    <li>[Learning Item 4]</li>
+                                    <li>[Learning Item 5]</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card mb-3" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img src="[Your Image]" alt="Card image cap" class="card-img-top m-5 mr-5" style="width: 90%; height: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ml-5">
+                                    <h5 class="card-title">[Your Organization]</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                    <p class="card-text">
+                                        For the past [Your Duration], I have volunteered with [Your Volunteer Organization]. In the council I have gotten the opportunity to:
+                                        <ul>
+                                            <li>[Achievement 1]</li>
+                                            <li>[Achievement 2]</li>
+                                            <li>[Achievement 3]</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-2" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img src="[Your Image]" alt="Card image cap" class="card-img-top m-3 mr-5" style="width: 50%; height: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ml-5">
+                                    <h5 class="card-title">[Your Role]</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">[Your Club]</h6>
+                                    <p class="card-text">
+                                        In my first [Your Years] years of university, I had been a [Your Position] for [Your Field] students at [Your University]. I joined this team to continue to represent students and create a welcoming community.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
 
+            <!--projects-->
+            <div id="projects">
+                <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="text-center mb-2">
+                            <h2>Technical Projects</h2>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card project-1 col-lg-10 mx-auto mb-3" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col col-5">
+                                <img class="card-img-top my-3" src="[Your Image]" alt="Card image cap">
+                            </div>
+                            <div class="col col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">[Project 1]</h5>
+                                    <p class="card-text">[Project 1 Description]</p>
+                                    <p class="text-muted">[Project 1 Technologies]</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <a href="[Project 1 GitHub]" target="_blank"><i class="fab fa-github fs-1"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="[Project 1 Link]" target="_blank"><i class="fas fa-globe fs-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card project-2 col-lg-10 mx-auto mb-3" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col col-5">
+                                <img class="card-img-top my-3" src="[Your Image]" alt="Card image cap">
+                            </div>
+                            <div class="col col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">[Project 2]</h5>
+                                    <p class="card-text">[Project 2 Description]</p>
+                                    <p class="text-muted">[Project 2 Technologies]</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <a href="[Project 2 GitHub]" target="_blank"><i class="fab fa-github fs-1"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="[Project 2 Link]" target="_blank"><i class="fas fa-globe fs-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card project-3 col-lg-10 mx-auto mb-3" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col col-5">
+                                <img class="card-img-top my-3" src="[Your Image]" alt="Card image cap">
+                            </div>
+                            <div class="col col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">[Project 3]</h5>
+                                    <p class="card-text">[Project 3 Description]</p>
+                                    <p class="text-muted">[Project 3 Technologies]</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <a href="[Project 3 GitHub]" target="_blank"><i class="fab fa-github fs-1"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="[Project 3 Link]" target="_blank"><i class="fas fa-globe fs-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card project-4 col-lg-10 mx-auto mb-3" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col col-5">
+                                <img class="justify-content-centre my-3" src="[Your Image]" alt="Card image cap">
+                            </div>
+                            <div class="col col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">[Project 4]</h5>
+                                    <p class="card-text">[Project 4 Description]</p>
+                                    <p class="text-muted">[Project 4 Technologies]</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <a href="[Project 4 GitHub]" target="_blank"><i class="fab fa-github fs-1"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="[Project 4 Link]" target="_blank"><i class="fas fa-globe fs-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    // Additional scripts for functionality from the new HTML
-    $(function() {
-      AOS.init();
-      // Your existing functionality for smooth scrolling, tooltips, etc.
-    });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+            <!--Resume-->
+            <hr>
+            <div class="container pb-5 mt-5" id="resume">
+                <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="text-center">
+                            <h2>Resume and Contact Information</h2>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-xl-6 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <object data="[Your Resume].pdf" type="application/pdf" width="500" height="500">
+                                    <a href="[Your Resume].pdf">
+                                        <iframe src="[Your Resume].pdf"></iframe>
+                                    </a>
+                                </object>
+                            </div>
+                        </div>
+                        <a class="btn btn-light mt-2 fs-5" href="[Your Resume].pdf" target="_blank">Resume</a>
+                    </div>
+                    <div class="col-xl-6 mt-5 justify-content-center text-center vertical-center">
+                        <h3>Looking for [Your Opportunity] Opportunities!</h3>
+                        <p>Feel free to reach out for the following roles or any others related to [Your Field]!</p>
+                        <div class="row justify-content-center">
+                            <p class="roles col-sm-12">[Role 1]</p>
+                            <p class="roles col-sm-12">[Role 2]</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <p class="roles col-sm-12">[Role 3]</p>
+                            <p class="roles col-sm-12">[Role 4]</p>
+                        </div>
+                        <div class="contact1 mt-5">
+                            <hr>
+                            <p>Contact Information can be found below:</p>
+                            <div class="row justify-content-around">
+                                <div class="col-3 email">
+                                    <a href="mailto:[Your Email]" target="_blank"><i class="fas fa-envelope fs-1"></i></a>
+                                </div>
+                                <div class="col-3 linkedin">
+                                    <a href="[Your LinkedIn]" target="_blank"><i class="fab fa-linkedin fs-1"></i></a>
+                                </div>
+                                <div class="col-3 github">
+                                    <a href="[Your GitHub]" target="_blank"><i class="fab fa-github fs-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<footer role="banner" class="my-0 text-center">
+    <p class="fs-5">Made with <span style="color: #e25555;">&#9829;</span> by [Your Name]</p>
+    <div class="row contact2 justify-content-center">
+        <div class="col-4 email">
+            <a href="mailto:[Your Email]" target="_blank"><i class="fas fa-envelope fs-1"></i></a>
+        </div>
+        <div class="col-4 linkedin">
+            <a href="[Your LinkedIn]" target="_blank"><i class="fab fa-linkedin fs-1"></i></a>
+        </div>
+        <div class="col-4 github">
+            <a href="[Your GitHub]" target="_blank"><i class="fab fa-github fs-1"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script> $(function() { AOS.init(); }); </script>
+<script>
+    $(function() {
+        var topoffset = 70; //variable for menu height
+
+        //Use smooth scrolling when clicking on navigation
+        $('.navbar-nav a').click(function() {
+            if (location.pathname.replace(/^\//, '') === 
+            this.pathname.replace(/^\//, '') && 
+            location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                scrollTop: target.offset().top - topoffset
+                }, 500);
+                return false;
+            }
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function(event) {
+        document.getElementById('flip-card-btn-turn-to-back').style.visibility = 'visible';
+        document.getElementById('flip-card-btn-turn-to-front').style.visibility = 'visible';
+
+        document.getElementById('flip-card-btn-turn-to-back').onclick = function() {
+            document.getElementById('flip-card').classList.toggle('do-flip');
+        };
+
+        document.getElementById('flip-card-btn-turn-to-front').onclick = function() {
+            document.getElementById('flip-card').classList.toggle('do-flip');
+        };
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7Gkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </html>
